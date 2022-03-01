@@ -11,9 +11,9 @@
     on:click={() => theme.set($theme === "dark" ? "light" : "dark")}
   >
     {#if $theme === "dark"}
-      <Icon icon="fa-regular:moon" />
-    {:else if $theme === "light"}
       <Icon icon="fa-regular:sun" />
+    {:else if $theme === "light"}
+      <Icon icon="fa-regular:moon" />
     {/if}
   </button>
 
