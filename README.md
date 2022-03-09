@@ -1,9 +1,11 @@
-## Get started
-
-Install the dependencies...
+## Preview
 
 ![Dark](screenshots/dark.jpg "Dark")
 ![Light](screenshots/dark.jpg "Light")
+
+## Get started
+
+Install the dependencies...
 
 ```bash
 cd startpage
