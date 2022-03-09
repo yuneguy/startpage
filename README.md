@@ -1,7 +1,7 @@
 ## Preview
 
 ![Dark](screenshots/dark.jpg "Dark")
-![Light](screenshots/dark.jpg "Light")
+![Light](screenshots/light.jpg "Light")
 
 ## Get started
 
