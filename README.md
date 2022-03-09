@@ -2,6 +2,9 @@
 
 Install the dependencies...
 
+![Dark](screenshots/dark.jpg "Dark")
+![Light](screenshots/dark.jpg "Light")
+
 ```bash
 cd startpage
 npm install
