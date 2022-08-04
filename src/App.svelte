@@ -70,7 +70,7 @@
 
   .theme-dark .grid__item:hover {
     background: #242424;
-    box-shadow: 0 0 50px rgba(256, 256, 256, 0.07);
+    box-shadow: 0 0 15px rgba(256, 256, 256, 0.10);
   }
 
   .theme-light .grid__item {
@@ -81,7 +81,7 @@
   .theme-light .grid__item:hover {
     background: #1c1c1c;
     color: #b5b4c9;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.17);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
   }
 
   .grid {
