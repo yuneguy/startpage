@@ -1,5 +1,4 @@
 <script>
-  import Icon from "@iconify/svelte";
   import { theme } from "./store.js";
 
   export let bookmarks;
@@ -11,16 +10,15 @@
     on:click={() => theme.set($theme === "dark" ? "light" : "dark")}
   >
     {#if $theme === "dark"}
-      <Icon icon="fa-regular:sun" />
+      Light
     {:else if $theme === "light"}
-      <Icon icon="fa-regular:moon" />
+      Dark
     {/if}
   </button>
 
   <div class="grid">
     {#each bookmarks as bookmark}
       <a class="grid__item" href={bookmark.url}>
-        <Icon icon={bookmark.icon} class="icon" />
         {bookmark.title}
       </a>
     {/each}
@@ -105,10 +103,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  :global(.icon) {
-    margin-right: 5px;
   }
 
   @media screen and (max-width: 1024px) {
