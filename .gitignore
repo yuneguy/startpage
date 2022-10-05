@@ -1,4 +1,9 @@
-/node_modules/
-/public/build/
-
 .DS_Store
+.vite-ssg-dist
+.vite-ssg-temp
+*.local
+dist
+dist-ssr
+node_modules
+.idea/
+*.log
