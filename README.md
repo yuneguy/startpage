@@ -3,92 +3,71 @@
 ![Dark](screenshots/dark.jpg "Dark")
 ![Light](screenshots/light.jpg "Light")
 
-## Get started
+<h6 align='center'>
+<a href="https://vitesse-lite.netlify.app/">Live Demo</a>
+</h6>
 
-Install the dependencies...
+<h5 align='center'>
+<b>Lightweight version of <a href="https://github.com/antfu/vitesse">Vitesse</a></b>
+</h5>
 
-```bash
-cd startpage
-npm install
-```
+<br>
 
-...then start [Rollup](https://rollupjs.org):
+<p align='center'>
+<b>English</b> | <a href="https://github.com/antfu/vitesse-lite/blob/main/README.zh-CN.md">简体中文</a>
+<!-- Contributors: Thanks for geting interested, however we DON'T accept new transitions to the README, thanks. -->
+</p>
 
-```bash
-npm run dev
-```
+## Features
 
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+- 🗂 [File based routing](./src/pages)
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
+- 📦 [Components auto importing](./src/components)
 
-## Building and running in production mode
+- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 
-To create an optimised version of the app:
+- 😃 Use icons from any icon sets in [Pure CSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
-```bash
-npm run build
-```
+- 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+- ✅ Use [Vitest](http://vitest.dev/) for unit and components testing
+
+- 🦾 TypeScript, of course
+
+- ☁️ Deploy on Netlify, zero-config
 
 
-## Single-page app mode
+<br>
 
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
+### UI Frameworks
 
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
+- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 
-```js
-"start": "sirv public --single"
-```
+### Icons
 
-## Using TypeScript
+- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
+- [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
+### Plugins
 
-```bash
-node scripts/setupTypeScript.js
-```
+- [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
+- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
+- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
 
-Or remove the script via:
+## Try it now!
 
-```bash
-rm scripts/setupTypeScript.js
-```
+### GitHub Template
 
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
+[Create a repo from this template on GitHub](https://github.com/antfu/vitesse-lite/generate).
 
-## Deploying to the web
+### Clone to local
 
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
+If you prefer to do it manually with the cleaner git history
 
 ```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
+npx degit antfu/vitesse-lite my-vitesse-app
+cd my-vitesse-app
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
